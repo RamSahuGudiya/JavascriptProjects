@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=10, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/76c32c8d51.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Creating header section -->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Portfolio.png" alt="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, Im <span>R</span>am <span>S</span>ahu</h1>
+        </div>
+
+        <!-- <div class="profile-image">
+          <img src="images/ramsahu-profile-ai1.jpg" alt="" />
+        </div> -->
+      </div>
+    </div>
+    <!---Creating a about section-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/ramsahu-profile-ai1.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am passionate about leveraging technology to solve real-world
+              problems and contribute to the ever-evolving landscape of the
+              digital era. Throughout my academic journey, I have gained a solid
+              foundation in computer science principles, programming languages,
+              and software development methodologies.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Internships
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <div class="skill-bars">
+                <div class="bar">
+                  <div class="info"><span>HTML</span></div>
+                  <div class="progress-line html"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>CSS</span></div>
+                  <div class="progress-line css"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>Java Script</span></div>
+                  <div class="progress-line JavaScript"><span></span></div>
+                </div>
+                <div class="bar">
+                  <div class="info"><span>React</span></div>
+                  <div class="progress-line react"><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <h2>Skill Vertex <span> Bengaluru (Remote)</span></h2>
+                  <p class="role">Software Engineering Intern</p>
+                  <span class="date">(5th April - 5th May)</span>
+                  <p>
+                    Developed web applications utilising modern front-end
+                    technologies like CSS5, Javascript(ES6) and Reactjs to
+                    create dynamic and user-friendly interfaces. Integrated
+                    third-party APIs and libraries to enhance functionality and
+                    user experience
+                  </p>
+                </li>
+                <li>
+                  <h2>Braino Vision <span> Hydrabad (Remote)</span></h2>
+                  <p class="role">Web Development Intern</p>
+                  <span class="date">(12th March - 17th April)</span>
+                  <p>
+                    modern web technologies, with a primary emphasis on Fetch
+                    APIs and asynchronous programming (async/await).
+                    Successfully developed and maintained a web application,
+                    implementing Fetch APIs and async/await for efficient data
+                    retrieval and handling.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <h2>Bechelor Of Technology(CSE)</h2>
+                  <h4>Jawaharlal Nehru Technological University Kakinada</h4>
+
+                  <span>2019-2023</span>
+                </li>
+                <li>
+                  <h2>Intermediate</h2>
+                  <h4>Sri Chaitanya Junior College</h4>
+                  <span>2017-2019</span>
+                </li>
+                <li>
+                  <h2>High School</h2>
+
+                  <h4>Pooja Vidya Niketan</h4>
+
+                  <span>2016-2017</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---creating a services section-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>Your Vision, Our Code, Infinite Possibilities.</p>
+            <a href="https://github.com/RamSahuGudiya">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX</h2>
+            <p>Creating Interfaces that Speak, Listen, and Impress.</p>
+            <a href="https://github.com/RamSahuGudiya">Learn More</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Developer</h2>
+            <p>Empowering Ideas with Cutting-Edge App Development.</p>
+            <a href="https://github.com/RamSahuGudiya">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----working on portfolio --->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Online Payment</h3>
+              <p>
+                This app used to transfer the direct money from your wallet
+                without using pin and you also debited the same as a direct
+                process
+              </p>
+              <a href="https://online-payment-ram-sahu.netlify.app/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Financial website</h3>
+              <p>
+                The main concern's of this application is utilizing Advanced Dom
+                like: event propogation, delegation, image lazy loading and many
+                more.
+              </p>
+              <a href="https://bank-application-ramsahu.netlify.app/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Dice Roll Game</h3>
+              <p>
+                Build with simple interface using Html,Css and vanilla
+                JavaScript(enhanced with modern JS of ES6 )
+              </p>
+              <a href="https://dice-roll-game-ram-sahu.netlify.app/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://github.com/RamSahuGudiya" class="btn">see More</a>
+      </div>
+    </div>
+    <!---Creating Contact Section--->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> ramsahugudiya@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> 7780280427</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i> </a>
+              <a href="https://twitter.com/NotChunkyCode"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a href="https://www.instagram.com/_ram_.sahu_/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ram-sahu-56a795229/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <!---DownLoad Resource-->
+            <a href="images/my-cv.pdf" download class="btn btn2">DownLoad CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" action="">
+              <input
+                type="text"
+                name="Name"
+                class="user"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © All rights reserved. Created by Ram Sahu</p>
+      </div>
+    </div>
+
+    <script>
+      let tabLinks = document.getElementsByClassName("tab-links");
+      let tabContents = document.getElementsByClassName("tab-contents");
+
+      const opentab = function (tabName) {
+        for (const link of tabLinks) {
+          link.classList.remove("active-link");
+        }
+
+        for (const content of tabContents) {
+          content.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      };
+    </script>
+    <script>
+      let sideMenu = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sideMenu.style.right = "0px";
+      }
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw3XhQpO3sje02zoSdUCzfasljtbHl9wjTYu85EYThdfj0AkLJ6s20vPyiH8IyhBToX/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      const User = document.querySelector(".user");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = `Hey ${User.value}, Message sent successfully`;
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
